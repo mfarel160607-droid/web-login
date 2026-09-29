@@ -1,0 +1,137 @@
+body {
+    background-color: black;
+}
+
+.container {
+    width: 610PX;
+    margin: 45px auto 60px;
+    padding: 30px 34px;
+    background: white;
+    border-radius: 18px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.10);
+
+        border-top: 5px solid #1976d2;
+}
+
+/* Title */
+.container h1 {
+    margin: 0 0 25px;
+    padding-bottom: 18px;
+
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+
+    color: #1976d2;
+
+    border-bottom: 1px dashed #cfcfcf;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom:18px;
+}
+
+/* Label */
+.form-group label {
+    display: block;
+
+        margin-bottom: 7px;
+
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 600px;
+
+        color: #263238;
+}
+
+/* Input */
+.form-group input {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 13px 15px;
+
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+
+    color: #263238;
+    background: #f7f9fc;
+
+    border: 1px solid #d8dee8;
+    border-radius: 9px;
+
+    outline: none;
+
+    transition: all 0.25s ease;
+}
+
+/* Placeholder */
+.form-group input::placeholder {
+    color: #9aa4b2;
+}
+
+/* Input Focus */
+.form-group input:focus {
+    background: black;
+    
+    background-color: #1976d2;
+
+    box-shadow:
+        0 0 0 3px rgba(25, 118, 210, 0,12);
+
+        transform: translateY(-1PX);
+}
+
+/* Valid Input */
+.form-group input:valid {
+    border-left: 4px solid #20a05a;
+}
+.form-actions input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: linear-gradient(
+        135deg,
+        #1976d2,
+        #1565c0
+    );
+
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+.form-actions input[type="submit"]:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease-in-out;
+}
+/* ================================
+    RESPONSIVE                
+================================ */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: calc(100% - 30px);
+        margin: 25px auto;
+        padding: 25px 20px;
+    }
+
+    .container h1 {
+        font-size: 22px;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+}
